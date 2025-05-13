@@ -4,11 +4,24 @@ version = "0.1.0"
 description = ""
 authors = ["Nuung <qlgks1@naver.com>"]
 readme = "README.md"
+packages = [
+    { include = "app" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.13"
 psycopg2-binary = "^2.9.10"
 openai = "^1.75.0"
+langchain-postgres = "^0.0.14"
+langchain-openai = "^0.3.16"
+dotenv = "^0.9.9"
+greenlet = "^3.2.2"
+sentence-transformers = "^4.1.0"
+faiss-cpu = "^1.11.0"
+rapidfuzz = "^3.13.0"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.2"
+python-multipart = "^0.0.20"
 
 
 [build-system]
